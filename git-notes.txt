@@ -26,3 +26,9 @@ This is my first web project
 
     -or set upstream on every push
     git push -u origin main
+
+
+FOR NEW CHANGES THESE ARE THE COMMON COMMAND TO BE USED
+    git add . -> to stage new changes
+    git commit -m "description" -> to local repo
+    git push -> push to remote
