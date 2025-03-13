@@ -17,15 +17,21 @@ header {
     font-size: 10px;
     font-weight: bold;
     margin-bottom: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
 }
 
 main {
+    max-width: 800px;
     width: 70%;
     background: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    margin: 50px auto;
+    margin: 140px auto;
     position: relative;
 }
 
@@ -36,14 +42,16 @@ main {
     position: absolute;
     top: -100px;
     left: 50%;
-    margin-left: -75px;
+    margin-left: -60px;
     border: 5px solid white;
     background: white;
 }
 
 .profile{
     padding-top: 80px;
+    padding-bottom: 50px;
     position: relative;
+    
 }
 
 .profile h1 {
@@ -53,10 +61,11 @@ main {
 
 .profile p {
     font-size: 18px;
+    padding-bottom: 20px;
 }
 
 section p{
-    text-align: left;
+    text-align: justify;
     padding: 15px 25px 35px 25px;
     margin-bottom: 20px;
 }
@@ -72,23 +81,18 @@ section h2 {
     margin-top: 10px;
 }
 
-ul {
-    display: inline-block;
-    justify-content: center;
-    padding: 0 30px;
-    text-align: center;
-    margin-bottom: 30px;
+ul{
+    padding-bottom: 30px;
 }
 
 ul li {
     background: #ec5b27;
     color: white;
-    padding: 10px;
+    padding: 10px 10px;
     border-radius: 5px;
     font-size: 15px;
     margin: 10px 20px;
     display: inline-block;
-    height: 20px;
     width: 150px;
 }
 
@@ -98,10 +102,6 @@ ul li {
     text-align: center;
 }
 
-.contact {
-    padding-bottom: 20px; 
-    margin-bottom: 20px;
-}
 
 
 a{
