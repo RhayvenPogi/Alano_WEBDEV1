@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color: #1e1e2f;
+            --secondary-color: #ff6b6b;
+            --background-color: #f4f4f8;
+            --text-color: #222;
+            --spacing: 20px;
+            --navbar-height: 60px;
+            --radius1: 5px;
+            --radius2: 10px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            height: 100%;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            font-size: larger;
+        }
+        .grid-area {
+            display: grid;
+            grid-template-areas: 
+                "header header header header header"
+                "sidebar main main main main"
+                "footer footer footer  footer footer";
+            grid-template-columns: 1fr 4fr;
+            grid-template-rows: auto 1fr auto;
+            height: 100%;
+            margin-top: 100px;
+        }
+        header {
+            grid-area: header;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            padding: 20px;
+            
+        }
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 20px;
+            
+        }
+
+
+        header nav ul li{
+            padding: var(--spacing);
+        }
+
+
+        header nav ul li a {
+            color: var(--background-color);
+            text-decoration: none;
+            padding: var(--spacing);
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover{
+            background-color: #ff6b6b;
+            border-radius: var(--radius1);
+        }
+        .sidebar {
+            grid-area: sidebar;
+            background-color: var(--primary-color);
+            color: white;
+            padding: var(--spacing);
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            margin: var(--spacing);
+            border-radius: var(--radius2);
+            padding: 
+        }
+        .sidebar h3 {
+            color: white;
+            margin: 20px;
+        }
+        .sidebar nav ul {
+            list-style: none;
+        }
+        .sidebar nav ul li {
+            margin: 10px;
+            background-color: #414141;
+            border-radius: var(--radius1);
+            padding: var(--spacing);
+        }
+        .sidebar nav ul li a {
+            color: var(--background-color);
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .sidebar nav ul li:hover{
+            background-color: var(--secondary-color);
+        }
+        .main-content {
+            grid-area: main;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 20px 20px 0;
+        }
+        .main-content div {
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0px 10px rgb(82, 82, 82);
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding: var(--spacing);
+        }
+        img{
+            object-fit: cover;
+            height: 500px;
+            width: 100%;
+            border-radius: var(--radius1);
+            margin-bottom: 10px;
+        }
+        footer {
+            grid-area: footer;
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 40px;
+            grid-column: 1 / -1;
+            
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-area">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="sidebar">
+            <h2>Menu</h2>
+            <nav>
+                <ul>
+                    <li><a href="/">Dashboard</a></li>
+                    <li><a href="/">Profile</a></li>
+                    <li><a href="/">Settings</a></li>
+                    <li><a href="/">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <div>
+                <img src="images/nature.jpg" alt="nature">
+                <h3>Beautiful Nature</h3>
+                <p>Experience the beauty of nature and the outdoors.</p>
+            </div>
+            <div>
+                <img src="images/technology.jpg" alt="technology">
+                <h3>Modern Technology</h3>
+                <p>Explore the latest advancements in technology.</p>
+            </div>
+            <div>
+                <img src="images/architecture.jpg" alt="architecture">
+                <h3>Amazing Architecture</h3>
+                <p>Discover stunning architectural designs.</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Modern Layout - All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
