@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: hsl(43, 8%, 83%);
+    font-family: Arial, sans-serif;
+    color: #346572;
+    margin: 30px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+.utang-list {
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+.utang-list input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+.utang-list button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #346572;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto 0;
+    display: block;
+}
+
+
+.utang-list button:hover {
+    background-color: #2a4d5f;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+ ul li {
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+
+.error{
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+}

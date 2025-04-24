@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/utang.js" defer></script>
+    <title>Pautangan</title>
+</head>
+<body>
+    <main>
+        <!-- Main heading of the webpage -->
+        <h1>Utangan ng Pogi</h1>
+
+        <!-- Section for adding new utang (debt) -->
+        <div class="utang-list">
+            <input type="text" id="name" placeholder="Enter Pangalan..." />
+            <input type="number" id="amount" placeholder="Enter Halaga..." />
+            <button id="save-button">Save</button>
+        </div>
+
+        <!-- Section for displaying the list of utang -->
+        <div>
+            <h2>Listahan ng mga Utang</h2>
+            <ul id="nakautangs"></ul>
+        </div>
+
+        <!-- Section for displaying error messages -->
+        <div>
+            <p id="error-message"></p>
+        </div>
+    </main>
+</body>
+</html>
