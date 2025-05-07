@@ -34,12 +34,12 @@ aside{
 }
 
 
-
 .brand{
     margin-bottom: 64px;
     display:flex;
     align-items: center;
     gap: 8px;
+    
 }
 
 .brand span{
@@ -55,13 +55,13 @@ aside{
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
 
 }
 
 .menu > ul a{
     text-decoration: none;
-    color: var(--secondary);
+    color: #9197B3;
     width: 231px;
     height: 24px;
 }
