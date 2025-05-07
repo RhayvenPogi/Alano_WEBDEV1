@@ -74,6 +74,7 @@ aside{
     padding-left: 38px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .menu > ul li:hover,
